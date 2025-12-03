@@ -21,10 +21,10 @@ const AboutSection: React.FC = () => {
         <div className="md:col-span-3 border-2 border-[#000053] rounded-lg p-6">
           <p className="text-sm font-semibold text-[#000053] mb-1">1999 → Today</p>
           <h3 className="font-bold text-[#000053] text-lg mb-3">
-            PCP Express Heritage, PCP Transport Momentum
+            PCP Transport Heritage, PCP Transport Momentum
           </h3>
           <p className="text-[#000053] leading-relaxed text-sm">
-            <strong>PCP Transport</strong> is an expanded service offering from PCP Express, 
+            <strong>PCP Transport</strong> is an expanded service offering from PCP Transport, 
             a logistics company established in Indonesia in <strong>1999</strong>. Starting with
             document and small-parcel delivery services, the company has grown into a 
             national distribution solutions provider for both <strong>B2B</strong> and <strong>B2C</strong> segments. 

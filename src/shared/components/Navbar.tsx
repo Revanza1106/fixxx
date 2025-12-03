@@ -23,19 +23,17 @@ const Navbar = () => {
                     </Link>
                 </div>
 
-
                 <ul className="hidden md:flex items-center gap-6 lg:gap-8 text-[#000053] font-medium">
                     <li className="hover:text-[#00C300] cursor-pointer"><Link to="/">Home</Link></li>
                     <li className="hover:text-[#00C300] cursor-pointer"><Link to="/service">Service</Link></li>
+                    <li className="hover:text-[#00C300] cursor-pointer"><Link to="/branches">Branch Offices</Link></li>
                     <li className="hover:text-[#00C300] cursor-pointer"><Link to="/about">About</Link></li>
                     <li className="hover:text-[#00C300] cursor-pointer"><Link to="/contact">Contact</Link></li>
                 </ul>
 
-
                 <Link to="/contact" className="hidden md:block bg-[#000053] text-white px-5 py-2 rounded-lg hover:bg-[#00C300] transition-all">
                     Contact Sales
                 </Link>
-
 
                 <div className="md:hidden">
                     <button onClick={toggleMenu} className="text-[#000053] text-2xl">
@@ -49,6 +47,7 @@ const Navbar = () => {
                     <ul className="flex flex-col items-center gap-2 py-4 text-[#000053] font-medium">
                         <li className="hover:text-[#00C300] cursor-pointer w-full text-center py-2" onClick={closeMenu}><Link to="/">Home</Link></li>
                         <li className="hover:text-[#00C300] cursor-pointer w-full text-center py-2" onClick={closeMenu}><Link to="/service">Service</Link></li>
+                        <li className="hover:text-[#00C300] cursor-pointer w-full text-center py-2" onClick={closeMenu}><Link to="/branches">Branch Offices</Link></li>
                         <li className="hover:text-[#00C300] cursor-pointer w-full text-center py-2" onClick={closeMenu}><Link to="/about">About</Link></li>
                         <li className="hover:text-[#00C300] cursor-pointer w-full text-center py-2" onClick={closeMenu}><Link to="/contact">Contact</Link></li>
                     </ul>

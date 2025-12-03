@@ -33,11 +33,11 @@ export default function AboutTransport() {
       <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         <div>
           <h2 className="text-2xl md:text-3xl font-extrabold text-[#001F54]">
-            From PCP Express to PCP Transport
+            From PCP Transport to PCP Transport
           </h2>
 
           <p className="text-gray-600 mt-4 leading-relaxed">
-            Since 1999, PCP Express has built trust in express, courier, and
+            Since 1999, PCP Transport has built trust in Transport, courier, and
             parcel distribution. PCP Transport is our new growth engine
             expanding into trucking, inland freight, and ocean freight to move
             Indonesia’s industries.

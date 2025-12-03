@@ -5,7 +5,7 @@ const MilestoneSection: React.FC = () => {
   const milestones = [
     {
       year: "1999",
-      text: "PCP Express founded – Domestic Express & Parcel."
+      text: "PCP Transport founded – Domestic Transport & Parcel."
     },
     {
       year: "2010",

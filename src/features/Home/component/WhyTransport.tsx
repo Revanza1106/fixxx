@@ -6,7 +6,7 @@ const WhyTransport: React.FC = () => {
     "Middle-mile strength with nationwide integration",
     "Scalable for bulk and project cargo",
     "API-first operations and real-time visibility",
-    "Proven reliability from PCP Express heritage",
+    "Proven reliability from PCP Transport heritage",
   ];
 
   return (
