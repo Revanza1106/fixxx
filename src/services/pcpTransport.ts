@@ -5,7 +5,9 @@ import type {
   BranchOffice,
   Province,
   Branch,
-  OfficeSite
+  OfficeSite,
+  CheckOngkirRequest,
+  CheckOngkirResponse
 } from '../types/pcpTransport';
 
 class PCPTransportServiceImpl implements PCPTransportService {
@@ -55,6 +57,19 @@ class PCPTransportServiceImpl implements PCPTransportService {
     });
   }
 
+  async checkOngkir(request: CheckOngkirRequest): Promise<CheckOngkirResponse> {
+    const params = new URLSearchParams({
+      originId: request.originId,
+      destinationId: request.destinationId,
+      actualWeight: request.actualWeight.toString(),
+      lengthCm: (request.lengthCm || 0).toString(),
+      widthCm: (request.widthCm || 0).toString(),
+      heightCm: (request.heightCm || 0).toString(),
+    });
+
+    return this.request(`/api/check-ongkir?${params}`);
+  }
+
   // Helper method to transform API response to simplified format
   transformToBranchOffices(response: BranchOfficeApiResponse): BranchOffice[] {
     if (!response.status || !response.data) {
@@ -102,4 +117,4 @@ class PCPTransportServiceImpl implements PCPTransportService {
 
 export const pcpTransportService = new PCPTransportServiceImpl();
 export { PCPTransportServiceImpl };
-export type { BranchOfficeApiResponse, PCPTransportService, BranchOffice };
+  export type { BranchOfficeApiResponse, PCPTransportService, BranchOffice, CheckOngkirResponse, CheckOngkirRequest };

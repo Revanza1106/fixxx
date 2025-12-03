@@ -53,8 +53,37 @@ export interface GetBranchOfficesRequest {
   region?: string;
 }
 
+// Ongkir/Shipping Cost Types
+export interface ShippingService {
+  ServiceId: string;
+  ServiceCode: string;
+  ServiceName: string;
+  Rate: string;
+  LeadTime: string;
+  Result: string;
+  Rate1St: string;
+  Rate2St: string;
+  MinKg: string;
+  MaxKg: string;
+}
+
+export interface CheckOngkirRequest {
+  originId: string;
+  destinationId: string;
+  actualWeight: number;
+  lengthCm?: number;
+  widthCm?: number;
+  heightCm?: number;
+}
+
+export interface CheckOngkirResponse {
+  status: boolean;
+  list: ShippingService[];
+}
+
 // API Service Interface
 export interface PCPTransportService {
   getBranchOffices(region?: string): Promise<BranchOfficeApiResponse>;
   getTrackingInfo(awbNo: string): Promise<any>;
+  checkOngkir(request: CheckOngkirRequest): Promise<CheckOngkirResponse>;
 }

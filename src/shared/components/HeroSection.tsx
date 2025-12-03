@@ -29,10 +29,10 @@ const HeroSection = () => {
         </Link>
 
         <Link
-            to="/service"
+            to="/check-ongkir"
             className="text-[#001F54] border border-gray-300 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition w-full sm:w-auto"
         >
-            Explore Service
+            Check Shipping
         </Link>
         </div>
     </div>

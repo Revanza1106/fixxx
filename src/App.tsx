@@ -7,6 +7,7 @@ import Contact from './features/Contact'
 import Service from './features/Service'
 import TrackAndTrace from './features/TrackAndTrace'
 import BranchOffices from './features/BranchOffices'
+import CheckOngkir from './features/CheckOngkir'
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/track" element={<TrackAndTrace />} />
           <Route path="/branches" element={<BranchOffices />} />
+          <Route path="/check-ongkir" element={<CheckOngkir />} />
         </Routes>
       </div>
       <Footer />
